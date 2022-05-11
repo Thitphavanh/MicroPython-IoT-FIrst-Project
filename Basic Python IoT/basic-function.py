@@ -1,19 +1,28 @@
 def hello():
-	print('Hello my friend')
+    print('Hello my friend')
 
 
 def sabaiydee():
-	print('ສະບາຍດີໝູ່')
+    print('ສະບາຍດີໝູ່')
+
 
 def nihao():
-	print('ໜີຫ້າວ')
+    print('ໜີຫ້າວ')
 
-friend = 'China'
 
-if friend == 'England':
-	hello()
-elif friend == 'China':
-	nihao()
-else:
-	sabaiydee()
+def xincao():
+    print('ສິນຈ້າວ')
 
+
+while True:
+    friend = input('Where are you from? : ')
+
+    if friend == 'England':
+        hello()
+    elif friend == 'Laos':
+        sabaiydee()
+    elif friend == 'Vietnam':
+        xincao()
+
+    else:
+        nihao()
