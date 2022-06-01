@@ -51,6 +51,9 @@ led.off()
 send_data('LED1: OFF')
 
 import urequests
+url = 'http://uncle-machine.com/hello/'
+result = urequests.get(url)
+print(result.text)
 
-result = urequests.get(url='http://uncle-machine.com/api/hello')
-urequests.get(url='http://uncle-machine.com/hello/').text
+# result = urequests.get(url='http://uncle-machine.com/api/hello')
+# urequests.get(url='http://uncle-machine.com/hello/').text
