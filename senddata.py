@@ -3,7 +3,7 @@ import network
 import time
 from machine import Pin
 
-serverip = '178.128.125.82'
+serverip = '192.168.0.54'
 port = 9000
 
 
@@ -24,3 +24,13 @@ time.sleep(2)
 wlan.connect(wifi, password)
 time.sleep(2)
 print(wlan.isconnected())
+
+led = Pin(23, Pin.OUT)
+
+for i in range(50):
+    led.on()
+    send_data('LED1:ON')
+    time.sleep(2)
+    led.off()
+    send_data('LED1:OFF')
+    time.sleep(2)
