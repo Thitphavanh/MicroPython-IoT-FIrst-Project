@@ -5,7 +5,7 @@ from machine import Pin
 import dht
 
 serverip = '192.168.0.54'
-port = 9001
+port = 9002
 
 
 def send_data(data):
@@ -24,22 +24,24 @@ wlan.active(True)
 time.sleep(2)
 wlan.connect(wifi, password)
 time.sleep(2)
-print(wlan.isconnected())
+print('STATUS : ',wlan.isconnected())
 
 print('> Temperature checking...')
 d = dht.DHT22(Pin(23))
 
-for i in range(10):
+for i in range(50):
     d.measure()
     time.sleep(1)
     temp = d.temperature()
     humid = d.humidity()
     print(temp)
     print(humid)
-    text = 'TEMP-HUMID:{} and {}'.format(temp,humid)
+    # text = 'TEMP-HUMID:{} and {}'.format(temp,humid)
+    text = 'Status:{}'.format(temp)
     send_data(text)
     time.sleep(3)
     print('-------')
+
 
 
 
