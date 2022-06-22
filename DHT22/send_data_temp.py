@@ -17,6 +17,7 @@ def send_data(data):
     print('Server:', data_server)
     server.close()
 
+
 wifi = 'Hery'
 password = '44332211'
 wlan = network.WLAN(network.STA_IF)
@@ -24,7 +25,7 @@ wlan.active(True)
 time.sleep(2)
 wlan.connect(wifi, password)
 time.sleep(2)
-print('STATUS : ',wlan.isconnected())
+print('STATUS : ', wlan.isconnected())
 
 print('> Temperature checking...')
 d = dht.DHT22(Pin(23))
@@ -41,11 +42,6 @@ for i in range(50):
     send_data(text)
     time.sleep(3)
     print('-------')
-
-
-
-
-
 
 
 # d = dht.DHT22(Pin(23))
