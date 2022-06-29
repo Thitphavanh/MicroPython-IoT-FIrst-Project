@@ -1,16 +1,9 @@
 from machine import Pin
-import time
-relay = Pin(23, Pin.OUT)
-relay.off()
-
-relay.value(0)
+relay = Pin(23,Pin.OUT)
 relay.value(1)
-relay.value(0)
-relay.value(1)
+led = Pin(22,Pin.OUT)
 
-relay.value(0)
-relay.value(1)
-
+led.on()
 def relay_on():
     relay.value(0)
     print('LED : ON')
