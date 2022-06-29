@@ -20,7 +20,7 @@ canvas.create_image(300, 200, anchor=NW, image=background)
 # ໃສ່ຫຼາຍຫຼ່ຽມ square
 canvas.create_polygon([630,426,675,450,675,495,629,470], fill='#01262e', width=1, outline=None, tags='d1')
 # ໃສ່ຂໍ້ຄວາມ text
-canvas.create_text(300,200, text='Window is going to close', fill='#01262e', font=('bold', 20), tags='d1')
+canvas.create_text(300,300, text='Window is going to close', fill='#01262e', font=('bold', 20), tags='d1')
 # ໃສ່ເສັ້ນ line
 canvas.create_line(425,320,640,455, fill='grey', width=1, tags='d1')
 # canvas.create_line(150,50,120,100,50,0,0,50,smooth=1)
@@ -36,14 +36,15 @@ def DoorOnOff(event):
     canvas.delete('d1')
     if door_state == True:
         canvas.create_polygon([630,426,675,450,675,495,629,470], fill='#01262e', width=1, outline=None, tags='d1')
-        canvas.create_text(300, 200, text='Window is going to close', fill='#01262e', font=('bold', 20), tags='d1')
+        canvas.create_text(300, 300, text='Window is going to close', fill='#01262e', font=('bold', 20), tags='d1')
         canvas.create_line(425,320,640,455, fill='grey', width=1, tags='d1')
     else:
         canvas.create_polygon([630,426,675,450,675,495,629,470], fill='#e8c307', width=1, outline=None, tags='d1')
-        canvas.create_text(300, 200, text='Window is going to open', fill='#e8c307', font=('bold', 20), tags='d1')
+        canvas.create_text(300, 300, text='Window is going to open', fill='#e8c307', font=('bold', 20), tags='d1')
         canvas.create_line(425,320,640,455, fill='grey', width=1, tags='d1')
 
 
+# ----------------------Fan----------------------
 fan = ImageTk.PhotoImage(Image.open('fan.png'))
 canvas.create_image(1063, 461, image=fan, tags='img3', anchor=CENTER)
 
