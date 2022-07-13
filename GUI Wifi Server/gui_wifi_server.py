@@ -80,10 +80,10 @@ GUI = Tk()
 GUI.geometry('750x500')
 GUI.title('IoT-Wifi-Server Develope By Anitocorn Inc.')
 
-FONT = ('Roman', 20)
+FONT = (20)
 FONT1 = (15)
 
-label1 = Label(GUI, text='Check status LED', font=FONT)
+label1 = Label(GUI, text='CHECK STATUS LED', font=FONT)
 label1.pack()
 
 v_status = StringVar()
@@ -92,7 +92,7 @@ label2 = Label(GUI, textvariable=v_status, font=FONT1)
 label2.configure(fg='red')
 label2.pack()
 
-img = PhotoImage(file='28.png')
+img = PhotoImage(file='23.png')
 ICON = Label(GUI, image=img)
 ICON.pack()
 
