@@ -24,7 +24,7 @@ def gettemp():
         data = server.recv(1024).decode('utf-8')
         server.close()
 
-        stamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        stamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # strftime.org
         print(data)
         t, h = data.split('_')
         dt = [stamp, t, h]
