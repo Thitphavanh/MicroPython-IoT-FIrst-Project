@@ -57,3 +57,10 @@ print(result.text)
 
 # result = urequests.get(url='http://uncle-machine.com/api/hello')
 # urequests.get(url='http://uncle-machine.com/hello/').text
+
+
+
+
+
+
+
