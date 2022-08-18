@@ -1,0 +1,23 @@
+# create django web api server
+
+1.pip install virtualenv
+
+2.python -m virtualenv
+
+3.C:\Users\Hery>cd C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server
+
+4.C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server>python -m virtualenv venv
+
+5.C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server>.\venv\scripts\activate
+
+6.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server>
+
+7.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server>pip install django==3.2
+
+8.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server>django-admin startproject iotserver
+
+9.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>python manage.py runserver
+
+10.0(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>python manage.py runserver 0.0.0.0:8000
+
+11.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>pip install djangorestframework
