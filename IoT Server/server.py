@@ -1,6 +1,6 @@
 import socket
 
-serverip = '192.168.0.54'
+serverip = '192.168.192.1'
 port = 9000
 
 

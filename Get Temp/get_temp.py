@@ -11,7 +11,7 @@ def writecsv(data):
         fw.writerow(data)
 
 
-serverip = '192.168.0.204'
+serverip = '192.168.192.1'
 port = 80
 
 
