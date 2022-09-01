@@ -20,4 +20,10 @@
 
 10.0(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>python manage.py runserver 0.0.0.0:8000
 
-11.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>pip install djangorestframework
+10.0(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>python manage.py runserver 0.0.0.0:8000
+
+11.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>python manage.py createsuperuser
+
+12.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>python manage.py startapp sensor
+
+13.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>pip install djangorestframework
