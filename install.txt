@@ -27,3 +27,7 @@
 12.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>python manage.py startapp sensor
 
 13.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>pip install djangorestframework
+
+14.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>python manage.py makemigrations
+
+15.(venv) C:\Users\Hery\Desktop\My Projects\MicroPython-IoT-Project\IoT Web API Server\iotserver>python manage.py migrate
