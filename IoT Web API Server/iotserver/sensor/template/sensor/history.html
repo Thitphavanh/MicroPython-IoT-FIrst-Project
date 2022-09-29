@@ -1,0 +1,46 @@
+{% extends 'sensor/base.html' %} {% block content %}
+<div class="container">
+  <h3>History:</h3>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <!-- <th scope="col">ID</th>
+        <th scope="col">CODE</th>
+        <th scope="col">TITLE</th>
+        <th scope="col">TEMPERATURE</th>
+        <th scope="col">HUMIDITY</th>
+        <th scope="col">TIMESTAMP</th> -->
+        <td class="table-dark">ID</td>
+        <td class="table-dark">CODE</td>
+        <td class="table-dark">TITLE</td>
+        <td class="table-dark">TEMPERATURE</td>
+        <td class="table-dark">HUMIDITY</td>
+        <td class="table-dark">TIMESTAMP</td>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {% for d in data %}
+      <!-- <tr>
+        <td>{{d.id}}</td>
+        <td>{{d.code}}</td>
+        <td>{{d.title}}</td>
+        <td>{{d.temperature}}</td>
+        <td>{{d.humidity}}</td>
+        <td>{{d.timestamp}}</td>
+      </tr> -->
+      <tr>
+        <td class="table-light">{{d.id}}</td>
+        <td class="table-secondary">{{d.code}}</td>
+        <td class="table-success">{{d.title}}</td>
+        <td class="table-danger">{{d.temperature}}</td>
+        <td class="table-info">{{d.humidity}}</td>
+        <td class="table-primary">{{d.timestamp}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock content %}
