@@ -4,7 +4,7 @@ import threading
 
 
 def runserver():
-    serverip = '192.168.0.54'
+    serverip = '172.20.10.2'
     port = 9002
     buffsize = 4096
 
